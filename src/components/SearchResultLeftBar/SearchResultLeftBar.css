@@ -1,0 +1,56 @@
+.SearchResultLeftBar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.SearchResultp {
+    font-weight: bold;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.SearchResultspan {
+    font-size: small;
+}
+
+.SearchResultspan:hover {
+    cursor: pointer;
+    color: #C24F00;
+}
+
+.StarIcon {
+    color: #FD9F00;
+    max-width: 1rem;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+.StarBorderIcon {
+    color: #FD9F00;
+    max-width: 1rem;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+.KeyboardArrowDownIcon {
+    margin: -5px;
+}
+
+.input {
+    border-radius: 3px;
+    height: 1.5rem;
+    width: 3.5rem;
+    border: 1px solid gray;
+}
+
+.button {
+    border-radius: 3px;
+    height: 1.5rem;
+    width: 1rem;
+    background-color: white;
+    border: 1px solid gray;
+}

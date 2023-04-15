@@ -1,0 +1,109 @@
+.searchBar  {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.searchBar__logo {
+  width: 100px;
+  margin-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.searchBar__locationIcon {
+  height: 16px !important;
+  margin: -5px;
+}
+
+.searchBar__optionBasket {
+  display: flex;
+  color: white;
+}
+
+.searchBar__Nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.searchBar__option {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.searchBar__optionLine1 {
+  font-size: 10px;
+}
+
+.searchBar__optionLine2 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.searchBar__search {
+  display: flex;
+  flex: 1;
+}
+
+.searchBar__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.searchBar__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #FDBA65;
+}
+
+.searchBar__searchIconHover:hover {
+  background-color: #F1A440;
+}
+
+.searchBar__shoppingCartIcon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.searchBar__languageFlag {
+  width: 16px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.searchBar__ArrowDropDownIcon {
+  max-width: 15px;
+  max-height: 15px;
+  margin: -3px;
+}
+
+.searchBar__gray {
+  color: #A7ACB2;
+}
+
+.searchBar__padding {
+  margin-left: 14px !important;
+}
+
+.searchBarHover:hover {
+  cursor: pointer;
+}
+
+.searchBar__roundedEdgesLeft {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.searchBar__roundedEdgesRight {
+  border-radius: 0px 5px 5px 0px;
+}

@@ -1,0 +1,30 @@
+.navBar {
+    background-color: #131921;
+    align-items: center;
+    height: 20px;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+
+
+.navBar__option {
+    display: flex;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+.navBar__optionOne {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    
+}

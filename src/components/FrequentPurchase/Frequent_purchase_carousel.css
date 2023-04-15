@@ -1,0 +1,74 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+
+}
+
+.carousel__title {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    margin-left: 23px;
+    vertical-align: top;
+    text-align: left;
+    min-height: 100%;
+   
+   
+    
+    width: 150px;
+    height: 400px;
+    
+ 
+}
+
+.product__img {
+    height: 160px;
+    width: 160px;
+    object-fit: containerß;
+}
+
+.product__info {
+    height: 80px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    color: #007185;
+    font-size: 14px;
+}
+
+.product__info:hover {
+    color: orange;
+}
+
+.carousel__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.carousel__container {
+    position: unset;
+    height: 500px;
+    width: 80%;
+    
+    .react-multiple-carousel__arrow {
+        position: absolute;
+    }
+    .react-multiple-carousel__arrow--left {
+        left: calc(-3% + 1px)
+    }
+    .react-multiple-carousel__arrow--right {
+        right: calc(-3% + 1px)
+    }
+}

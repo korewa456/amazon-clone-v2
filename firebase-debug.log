@@ -1,0 +1,60 @@
+[debug] [2023-04-15T05:18:39.951Z] ----------------------------------------------------------------------
+[debug] [2023-04-15T05:18:39.952Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hungj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-15T05:18:39.953Z] CLI Version:   11.27.0
+[debug] [2023-04-15T05:18:39.953Z] Platform:      win32
+[debug] [2023-04-15T05:18:39.953Z] Node Version:  v18.14.2
+[debug] [2023-04-15T05:18:39.953Z] Time:          Fri Apr 14 2023 22:18:39 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-04-15T05:18:39.954Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-15T05:18:39.956Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-15T05:18:40.038Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-15T05:18:40.038Z] > authorizing via signed-in user (hungjen0816@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hungj\Project\amazon-clone-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2023-04-15T05:18:40.162Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-15T05:18:40.162Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-15T05:18:48.239Z] Using project from CLI flag: clone-b7a06
+[debug] [2023-04-15T05:18:48.240Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-b7a06 [none]
+[debug] [2023-04-15T05:18:48.561Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-b7a06 200
+[debug] [2023-04-15T05:18:48.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-b7a06 {"projectId":"clone-b7a06","projectNumber":"99327792861","displayName":"amazon-clone","name":"projects/clone-b7a06","resources":{"hostingSite":"clone-b7a06"},"state":"ACTIVE","etag":"1_79198f70-9b84-4b27-9e5c-a797b6a13298"}
+[info] i  Using project clone-b7a06 (amazon-clone) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\hungj\Project\amazon-clone-main is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=669657748&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-04-15T05:18:49.050Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-04-15T05:18:49.050Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-04-15T05:18:49.317Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-04-15T05:18:49.317Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-04-15T05:18:49.321Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-04-15T05:18:49.610Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-04-15T05:18:49.610Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"korewa456","id":46043385,"node_id":"MDQ6VXNlcjQ2MDQzMzg1","avatar_url":"https://avatars.githubusercontent.com/u/46043385?v=4","gravatar_id":"","url":"https://api.github.com/users/korewa456","html_url":"https://github.com/korewa456","followers_url":"https://api.github.com/users/korewa456/followers","following_url":"https://api.github.com/users/korewa456/following{/other_user}","gists_url":"https://api.github.com/users/korewa456/gists{/gist_id}","starred_url":"https://api.github.com/users/korewa456/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/korewa456/subscriptions","organizations_url":"https://api.github.com/users/korewa456/orgs","repos_url":"https://api.github.com/users/korewa456/repos","events_url":"https://api.github.com/users/korewa456/events{/privacy}","received_events_url":"https://api.github.com/users/korewa456/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":0,"followers":0,"following":0,"created_at":"2018-12-21T07:22:22Z","updated_at":"2023-03-09T01:41:55Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":362,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as korewa456 
+[info] 

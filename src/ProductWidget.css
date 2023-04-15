@@ -1,0 +1,24 @@
+.widget{
+    padding: 10px;
+    border: 1px solid #ccc!important;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.button {
+    display: flex;
+    color: #000000;
+    font-size: 10px;
+    background-color: #ffd814;
+    border: 0px solid #2d63c8;
+    border-radius: 38px;
+    padding: 8px 49px;
+    cursor: pointer
+}
+
+.buyNow{
+    margin-top: 5px;
+    padding: 8px 55px;
+    min-width: 100px;
+    background-color: #ffa41c;
+}

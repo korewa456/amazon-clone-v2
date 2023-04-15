@@ -1,0 +1,58 @@
+.searchResultPagination__container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pagination {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+}
+
+.pagination > li > a {
+    float: left;
+    padding: 8px 20px;
+    line-height: 1.5;
+    border: 1px solid #D5D9D9;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    box-shadow: 0 3px 2px -2px #E9EAEA;
+}
+
+.pagination > li.active > a {
+    color: #0F1111;
+    font-weight: bold;
+    border: 1px solid #0F1111;
+}
+
+.pagination > li > a:hover {
+    background-color: #F5F6F6;
+    cursor: pointer;
+}
+
+.pagination > li.active > a:hover {
+    cursor: text;
+    background-color: white;
+}
+
+.pagination > li:first-child > a {
+    border-left: 1px solid #D5D9D9;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.pagination > li:last-child > a {
+    border-right: 1px solid #D5D9D9;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.pagination > li.disabled > a {
+    color: #6F7373;
+    background-color: white;
+    cursor: text;
+}
+
+.searchResultPagination__directionArrow {
+    max-height: 30px;
+    margin-bottom: -6px;
+}

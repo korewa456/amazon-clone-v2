@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 0 200px;
+}
+
+.productImg{
+    max-width: 500px;
+    min-width: 500px;
+    max-height: auto;
+}
+
+.widgetContainer{
+    min-width: 175px;
+}

@@ -1,0 +1,38 @@
+.shoppingCartPage {
+    background-color: #EBEDED;
+    padding: 20px;
+}
+
+.shoppingCartPage__bannerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom   : 20px;
+}
+
+.shoppingCartPage__Banner {
+    max-width: 500px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.shoppingCartPage__Banner:hover {
+    cursor: pointer;
+}
+
+.yourAmazonCartIsEmpty {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+}
+
+.shoppingCartPage__blueText {
+    color: #207A8C;
+}
+
+.shoppingCartPage__link:hover {
+    cursor: pointer;
+    color: #C54B11;
+    text-decoration: underline;
+}
