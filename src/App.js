@@ -52,6 +52,7 @@ function App() {
             <div>
               <SearchBar />
               <ProductPage />
+              <Footer_One />
               <FooterPart2 />
             </div>
           }
@@ -62,6 +63,7 @@ function App() {
             <div>
               <SearchBar />
               <ShoppingCartPage />
+              <Footer_One />
               <FooterPart2 />
             </div>
           }
@@ -72,6 +74,7 @@ function App() {
             <div>
               <SearchBar />
               <SearchResults />
+              <Footer_One />
               <FooterPart2 />
             </div>
           }
