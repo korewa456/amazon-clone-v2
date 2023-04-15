@@ -13,7 +13,7 @@ function Frequent_purchase_Carousel() {
     },
     desktop: {
       breakpoint: { max: 4000, min: 1024 },
-      items: 8
+      items: 5
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
