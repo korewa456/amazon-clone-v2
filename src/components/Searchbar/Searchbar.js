@@ -12,7 +12,11 @@ function SearchBar() {
     setSearchInput(val.target.value);
   }
   let linkto = "/";
-  if (searchInput == "Protein Powder" || searchInput == "protein powder") {
+  if (
+    searchInput == "Protein Powder" ||
+    searchInput == "protein powder" ||
+    searchInput == "protein"
+  ) {
     linkto = "/searchResults";
   } else {
     linkto = "/";
