@@ -12,6 +12,8 @@ import Footer_One from "./components/footer_partOne/Footer_partOne";
 import SearchResults from "./components/SearchResults/SearchResults";
 import NavBar from "./components/Nav-Bar/Nav-Bar";
 
+
+
 function App() {
   return (
     <BrowserRouter>
