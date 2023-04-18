@@ -1,0 +1,94 @@
+.container__outer {
+    width: 247px;
+    height: 612px;
+    border: 1px solid lightgray;
+    padding: 0px 4px;
+    margin-left: 10px;
+}
+
+.container__productImg {
+    width: 221px;
+    height: 221px;
+
+    padding: 0px 13px 0 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.container__productTitle {
+    width: 221px;
+    height: 72px;
+    padding: 0px 13px 0 10px;
+
+}
+
+.container__productShippingInfo {
+    width: 221px;
+    height: 20px;
+    padding: 0px 13px 0 10px;
+
+
+}
+
+.container__rating {
+    width: 221px;
+    height: 20px;
+    padding: 0px 13px 0 10px;
+    display: flex;
+ 
+
+}
+
+.container__price {
+    width: 221px;
+    height: 33.5px;
+    padding: 0px 13px 0 10px;
+ 
+
+}
+
+.container__subscribeText {
+    width: 221px;
+    height: 40px;
+    padding: 0px 13px 0 10px;
+
+    font-size: 14px;
+    color: #565959;
+
+}
+
+.container__primeLogo {
+    width: 221px;
+    height: 21.5px;
+    padding: 0px 13px 0 10px;
+ 
+
+}
+
+.prime__logo {
+    height: 20px;
+}
+
+.container__delivery {
+    width: 221px;
+    height: 40px;
+    padding: 0px 13px 0 10px;
+    
+    font-size: 14px;
+    color: #0f1111;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container__button {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    font-size: 13px;
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+    
+
+}
