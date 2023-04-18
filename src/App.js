@@ -11,7 +11,7 @@ import Frequent_purchase_Carousel from "./components/FrequentPurchase/Frequent_p
 import Footer_One from "./components/footer_partOne/Footer_partOne";
 import SearchResults from "./components/SearchResults/SearchResults";
 import NavBar from "./components/Nav-Bar/Nav-Bar";
-
+import LoginPage from "./components/LoginPage/LoginPage";
 
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           path="/login"
           element={
             <div>
-              <h1>This is login page</h1>
+              <LoginPage />
             </div>
           }
         />
