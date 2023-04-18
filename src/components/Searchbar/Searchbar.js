@@ -5,9 +5,13 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
+import SignInButton from "../SignInButton/SignInButton"
 
 function SearchBar() {
   const [searchInput, setSearchInput] = useState(null);
+  const [isShown, setIsShown] = useState(false);
+  const [openProfile, setOpenProfile] = useState(false);
+
   function getData(val) {
     setSearchInput(val.target.value);
   }
@@ -75,12 +79,21 @@ function SearchBar() {
           </span>
         </div>
         {/* 1st Link */}
-        <Link to="/login">
         <div className="searchBar__option">
-          <span className="searchBar__optionLine1">Hello, sign in</span>
-          <span className="searchBar__optionLine2">Account & Lists{" "}<ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" /></span>
+          <span className="searchBar__optionLine1" onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)} onClick={() => setOpenProfile((prev) => !prev)}>Hello, sign in</span>
+          <span className="searchBar__optionLine2" onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)} onClick={() => setOpenProfile((prev) => !prev)}>Account & Lists{" "}<ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" /></span>
         </div>
-        </Link>
+        {isShown && (
+        <div>
+          <SignInButton />
+        </div>
+      )}
+      {
+        openProfile && <SignInButton />
+      
+      }
         {/* 2nd Link */}
         <div className="searchBar__option">
           <span className="searchBar__optionLine1">Returns</span>
