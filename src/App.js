@@ -11,6 +11,8 @@ import Frequent_purchase_Carousel from "./components/FrequentPurchase/Frequent_p
 import Footer_One from "./components/footer_partOne/Footer_partOne";
 import SearchResults from "./components/SearchResults/SearchResults";
 import NavBar from "./components/Nav-Bar/Nav-Bar";
+import ProductComponentTemplate from "./components/ProductComponentTemplate/ProductComponentTemplate";
+import ProductComponent from "./components/ProductComponentTemplate/ProductComponent"
 
 function App() {
   return (
@@ -73,6 +75,22 @@ function App() {
               <SearchBar />
               <SearchResults />
               <FooterPart2 />
+            </div>
+          }
+        />
+        <Route
+          path="/ProductComponentTemplate"
+          element={
+            <div>
+              <ProductComponentTemplate />
+            </div>
+          }
+        />
+        <Route
+          path="/ProductComponent"
+          element={
+            <div>
+              <ProductComponent />
             </div>
           }
         />
