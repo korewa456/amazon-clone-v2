@@ -41,11 +41,11 @@ function SearchBar() {
       <div className="searchBar__Nav">
         <div className="searchBar__option">
           <span className="searchBar__optionLine1 searchBar__padding">
-            Deliver to Hung
+            Hello
           </span>
           <span className="searchBar__optionLine2">
             <LocationOnOutlinedIcon className="searchBar__locationIcon" />
-            Eastvale 92880
+            Select your address
           </span>
         </div>
       </div>
@@ -75,13 +75,12 @@ function SearchBar() {
           </span>
         </div>
         {/* 1st Link */}
+        <Link to="/login">
         <div className="searchBar__option">
-          <span className="searchBar__optionLine1">Hello, Brian</span>
-          <span className="searchBar__optionLine2">
-            Account & Lists{" "}
-            <ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" />
-          </span>
+          <span className="searchBar__optionLine1">Hello, sign in</span>
+          <span className="searchBar__optionLine2">Account & Lists{" "}<ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" /></span>
         </div>
+        </Link>
         {/* 2nd Link */}
         <div className="searchBar__option">
           <span className="searchBar__optionLine1">Returns</span>
