@@ -13,6 +13,8 @@ import SearchResults from "./components/SearchResults/SearchResults";
 import NavBar from "./components/Nav-Bar/Nav-Bar";
 import LoginPage from "./components/LoginPage/LoginPage";
 import CreateAccount from "./components/LoginPage/CreateAccount"
+import ProductComponentTemplate from "./components/ProductComponentTemplate/ProductComponentTemplate";
+import ProductComponent from "./components/ProductComponentTemplate/ProductComponent"
 
 
 function App() {
@@ -87,6 +89,22 @@ function App() {
               <SearchResults />
               <Footer_One />
               <FooterPart2 />
+            </div>
+          }
+        />
+        <Route
+          path="/ProductComponentTemplate"
+          element={
+            <div>
+              <ProductComponentTemplate />
+            </div>
+          }
+        />
+        <Route
+          path="/ProductComponent"
+          element={
+            <div>
+              <ProductComponent />
             </div>
           }
         />
