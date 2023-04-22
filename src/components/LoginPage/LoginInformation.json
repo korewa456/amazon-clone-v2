@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Brian",
+        "zip": 92880,
+        "city": "Eastvale",
+        "email": "brian@gmail.com",
+        "password": "1234"
+    }
+]
