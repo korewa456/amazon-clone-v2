@@ -15,6 +15,7 @@ import LoginPage from "./components/LoginPage/LoginPage";
 import CreateAccount from "./components/LoginPage/CreateAccount"
 import ProductComponentTemplate from "./components/ProductComponentTemplate/ProductComponentTemplate";
 import ProductComponent from "./components/ProductComponentTemplate/ProductComponent"
+import PasswordPage from "./components/LoginPage/PasswordPage"
 
 
 function App() {
@@ -40,6 +41,14 @@ function App() {
           element={
             <div>
               <LoginPage />
+            </div>
+          }
+        />
+                <Route
+          path="/password"
+          element={
+            <div>
+              <PasswordPage />
             </div>
           }
         />
