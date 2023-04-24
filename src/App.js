@@ -24,10 +24,6 @@ function App() {
   function handleLoginClick() {
     setIsLoggedIn(true);
   }
-
-  function handleLogoutClick() {
-    setIsLoggedIn(false);
-  }
   
   return (
     <BrowserRouter>
