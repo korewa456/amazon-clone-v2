@@ -1,0 +1,148 @@
+.amazonLogo {
+    display: block;
+    width: 130px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.loginPage__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 26px !important;
+    max-width: 300px;
+    border: solid 1px #D5D9D9;
+    border-radius: 8px;
+    position: relative;
+    font-family: Arial,sans-serif;
+    margin-bottom: 12px;
+}
+
+h1 {
+    display: block;
+    margin-bottom: 10px !important;
+    font-family: Arial,sans-serif;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.loginPage__label {
+    display: block;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    font-size: small;
+}
+
+.loginPage__input {
+    width: 100%;
+    height: 31px;
+    border: solid 1px #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.07) inset;
+    outline: 0;
+    margin-bottom: 12px;
+}
+
+.loginPage__continueButton {
+    width: 100%;
+    height: 31px;
+    background-color: #FED500;
+    border: solid 1px #F1BE00;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.loginPage__continueButton:hover {
+    background-color: #F6C600;
+    cursor: pointer;
+}
+
+p {
+    font-size: 12px;
+    line-height: 1.5 !important;
+    margin-bottom: 24px;
+}
+
+.arrowRightIcon {
+    color: #656565;
+    width: 17x;
+    height: 17px;
+    margin: -3px;
+}
+
+.needHelp {
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.loginPage__container2 {
+    font-family: Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h5 {
+    color: #767676;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.loginPage__createNewAccountButton {
+    width: 350px;
+    height: 31px;
+    background-color: white;
+    border: solid 1px #D5D9D9;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.loginPage__createNewAccountButton:hover {
+    cursor: pointer;
+    background-color: #F7FAFA;
+}
+
+.bar {
+    max-width: 100%;
+}
+
+.loginPage__container3 {
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 11px;
+    line-height: 1.465;
+}
+
+.trademark {
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    font-size: 11px;
+    line-height: 1.465;
+    color: #555;
+}
+
+.aLink {
+    text-decoration: none;
+    color: #0066c0;
+}
+
+.aLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #c45500;
+}

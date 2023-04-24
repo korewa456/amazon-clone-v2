@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import ProductPage from "./ProductPage";
@@ -11,8 +11,20 @@ import Frequent_purchase_Carousel from "./components/FrequentPurchase/Frequent_p
 import Footer_One from "./components/footer_partOne/Footer_partOne";
 import SearchResults from "./components/SearchResults/SearchResults";
 import NavBar from "./components/Nav-Bar/Nav-Bar";
+import LoginPage from "./components/LoginPage/LoginPage";
+import CreateAccount from "./components/LoginPage/CreateAccount"
+import ProductComponentTemplate from "./components/ProductComponentTemplate/ProductComponentTemplate";
+import ProductComponent from "./components/ProductComponentTemplate/ProductComponent"
+import PasswordPage from "./components/LoginPage/PasswordPage"
+
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  function handleLoginClick() {
+    setIsLoggedIn(true);
+  }
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -20,7 +32,7 @@ function App() {
           path="/"
           element={
             <div>
-              <SearchBar />
+              <SearchBar isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
               <NavBar />
               <ProductSection />
               <Home />
@@ -34,7 +46,23 @@ function App() {
           path="/login"
           element={
             <div>
-              <h1>This is login page</h1>
+              <LoginPage />
+            </div>
+          }
+        />
+                <Route
+          path="/password"
+          element={
+            <div>
+              <PasswordPage isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
+            </div>
+          }
+        />
+                <Route
+          path="/register"
+          element={
+            <div>
+              <CreateAccount />
             </div>
           }
         />
@@ -52,6 +80,7 @@ function App() {
             <div>
               <SearchBar />
               <ProductPage />
+              <Footer_One />
               <FooterPart2 />
             </div>
           }
@@ -62,6 +91,7 @@ function App() {
             <div>
               <SearchBar />
               <ShoppingCartPage />
+              <Footer_One />
               <FooterPart2 />
             </div>
           }
@@ -72,7 +102,24 @@ function App() {
             <div>
               <SearchBar />
               <SearchResults />
+              <Footer_One />
               <FooterPart2 />
+            </div>
+          }
+        />
+        <Route
+          path="/ProductComponentTemplate"
+          element={
+            <div>
+              <ProductComponentTemplate />
+            </div>
+          }
+        />
+        <Route
+          path="/ProductComponent"
+          element={
+            <div>
+              <ProductComponent />
             </div>
           }
         />
