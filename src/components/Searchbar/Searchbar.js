@@ -6,12 +6,15 @@ import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
 import SignInButton from "../SignInButton/SignInButton"
+import LogoutButton from "../LogoutButton/LogoutButton"
 
 
 function SearchBar({isLoggedIn}) {
   const [searchInput, setSearchInput] = useState(null);
-  const [isShown, setIsShown] = useState(false);
-  const [openProfile, setOpenProfile] = useState(false);
+  const [signInIsShown, setSignInIsShown] = useState(false);
+  const [openSignInProfile, setOpenSignInProfile] = useState(false);
+  const [logoutIsShown, setLogoutIsShown] = useState(false);
+  const [openLogoutProfile, setOpenLogoutProfile] = useState(false);
 
 
   function getData(val) {
@@ -96,25 +99,34 @@ function SearchBar({isLoggedIn}) {
         {/* 1st Link */}
         {isLoggedIn ?
           <div className="searchBar__option">
-            <span className="searchBar__optionLine1">Hello, Brian</span>
-            <span className="searchBar__optionLine2">Account & Lists{" "}<ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" /></span>
+            <span className="searchBar__optionLine1" onMouseEnter={() => setLogoutIsShown(true)}
+              onMouseLeave={() => setLogoutIsShown(false)} onClick={() => setOpenLogoutProfile((prev) => !prev)}>Hello, Brian</span>
+            <span className="searchBar__optionLine2" onMouseEnter={() => setLogoutIsShown(true)}
+              onMouseLeave={() => setLogoutIsShown(false)} onClick={() => setOpenLogoutProfile((prev) => !prev)}>Account & Lists{" "}<ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" /></span>
           </div>
         :
           <div className="searchBar__option">
-            <span className="searchBar__optionLine1" onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)} onClick={() => setOpenProfile((prev) => !prev)}>Hello, sign in</span>
-            <span className="searchBar__optionLine2" onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)} onClick={() => setOpenProfile((prev) => !prev)}>Account & Lists{" "}<ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" /></span>
+            <span className="searchBar__optionLine1" onMouseEnter={() => setSignInIsShown(true)}
+              onMouseLeave={() => setSignInIsShown(false)} onClick={() => setOpenSignInProfile((prev) => !prev)}>Hello, sign in</span>
+            <span className="searchBar__optionLine2" onMouseEnter={() => setSignInIsShown(true)}
+              onMouseLeave={() => setSignInIsShown(false)} onClick={() => setOpenSignInProfile((prev) => !prev)}>Account & Lists{" "}<ArrowDropDownIcon className="searchBar__ArrowDropDownIcon searchBar__gray" /></span>
           </div>
         }
-        {isShown && (
+        {signInIsShown && (
         <div>
           <SignInButton />
         </div>
       )}
       {
-        openProfile && <SignInButton />
-      
+        openSignInProfile && <SignInButton />
+      }
+      {logoutIsShown && (
+        <div>
+          <LogoutButton />
+        </div>
+      )}
+      {
+        openLogoutProfile && <LogoutButton />
       }
         {/* 2nd Link */}
         <div className="searchBar__option">

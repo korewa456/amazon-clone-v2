@@ -24,6 +24,10 @@ function App() {
   function handleLoginClick() {
     setIsLoggedIn(true);
   }
+
+  function handleLogoutClick() {
+    setIsLoggedIn(false);
+  }
   
   return (
     <BrowserRouter>
@@ -78,7 +82,7 @@ function App() {
           path="/ProductPage"
           element={
             <div>
-              <SearchBar />
+              <SearchBar isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
               <ProductPage />
               <Footer_One />
               <FooterPart2 />
@@ -89,7 +93,7 @@ function App() {
           path="/checkOut"
           element={
             <div>
-              <SearchBar />
+              <SearchBar isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
               <ShoppingCartPage />
               <Footer_One />
               <FooterPart2 />
@@ -100,7 +104,7 @@ function App() {
           path="/searchResults"
           element={
             <div>
-              <SearchBar />
+              <SearchBar isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
               <SearchResults />
               <Footer_One />
               <FooterPart2 />
