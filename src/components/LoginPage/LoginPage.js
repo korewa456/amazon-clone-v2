@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./LoginPage.css"
 import { Link } from "react-router-dom";
 import amazonLogo from "./amazon logo.png"
@@ -6,6 +6,25 @@ import bar from "./bar.png"
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 function LoginPage() {
+    const [enterEmail, setEnterEmail] = useState("");
+    
+        let linkto2 = "/login";
+    {
+        enterEmail === "brian@gmail.com" ?
+        linkto2 = "/password" :
+        linkto2 = "/login";
+    }
+    let continueButton = (
+        <Link to={linkto2}>
+            <button className="loginPage__continueButton">Continue</button>
+        </Link>
+    );
+
+    const emailChange = event => {
+        setEnterEmail(event.target.value)
+    }
+
+
   return (
     <div className="loginPage">
         <Link to="/">
@@ -14,10 +33,8 @@ function LoginPage() {
         <div className="loginPage__container">
             <h1>Sign in</h1>
             <label className="loginPage__label">Email or mobile phone number</label>
-            <input type="email" maxlength="128" id="email" name="email" className="loginPage__input" />
-            <Link to="/password">
-                <button className="loginPage__continueButton">Continue</button>
-            </Link>
+            <input type="email" maxLength="128" id="email" name="email" className="loginPage__input" value={enterEmail} onChange={emailChange} />
+            {continueButton}
             <p>By continuing, you agree to Amazon's <a className="aLink" href="/">Conditions of Use</a> and <a className="aLink" href="/">Privacy Notice</a>.</p>
             <div className="needHelp">
                 <span className="needHelp"><ArrowRightIcon className="arrowRightIcon" /><a className="aLink" href="/">Need help?</a></span>
