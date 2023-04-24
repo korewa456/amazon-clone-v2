@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import ProductPage from "./ProductPage";
@@ -19,6 +19,12 @@ import PasswordPage from "./components/LoginPage/PasswordPage"
 
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  function handleLoginClick() {
+    setIsLoggedIn(true);
+  }
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -26,7 +32,7 @@ function App() {
           path="/"
           element={
             <div>
-              <SearchBar />
+              <SearchBar isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
               <NavBar />
               <ProductSection />
               <Home />
@@ -48,7 +54,7 @@ function App() {
           path="/password"
           element={
             <div>
-              <PasswordPage />
+              <PasswordPage isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
             </div>
           }
         />
