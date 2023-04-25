@@ -1,9 +1,10 @@
 import React from 'react';
 import "./ProductComponentTemplate.css";
+import { Check } from 'react-feather';
 
 
 
-function ProductComponentTemplate({id, image, title, shipping_info, rating, price}) {
+function ProductComponentTemplate({id, image, title, rating, price}) {
   return (
    <div className='container__outer'>
     <div className='container__productImg'>
@@ -28,7 +29,12 @@ function ProductComponentTemplate({id, image, title, shipping_info, rating, pric
      </div>
     <div className='container__subscribeText'>$8.89 with Subscribe & Save discount</div>
     <div className='container__primeLogo'>
-        <p>✔️</p>
+    <Check 
+                color='#FFC000'
+                size={12}
+                strokeWidth={4}
+                
+            />
         <h1 className='prime__text'>prime</h1>
         <p className='prime__textTwo'>Two-Day</p>
     </div>
