@@ -13,7 +13,7 @@ function ProductComponentTemplate({id, image, title, shipping_info, rating, pric
         <p>{title}</p>
      </div>
     <div className='container__productShippingInfo'>
-        <p>{shipping_info}</p>
+        <p>Ground</p>
      </div>
     <div className='container__rating'>
         {Array(rating)
@@ -28,10 +28,9 @@ function ProductComponentTemplate({id, image, title, shipping_info, rating, pric
      </div>
     <div className='container__subscribeText'>$8.89 with Subscribe & Save discount</div>
     <div className='container__primeLogo'>
-        <img className='prime__logo'
-            src='https://i.imgur.com/C3OSacE.png'
-            alt=''
-        />
+        <p>✔️</p>
+        <h1 className='prime__text'>prime</h1>
+        <p className='prime__textTwo'>Two-Day</p>
     </div>
     <div className='container__delivery'>FREE delivery Sun, Apr 23 on $25 of items shipped by Amazon</div>
     <button className="container__button">Add to Cart</button>
