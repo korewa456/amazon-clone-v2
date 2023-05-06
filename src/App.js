@@ -34,8 +34,8 @@ function App() {
             <div>
               <SearchBar isLoggedIn={isLoggedIn} handleLoginClick={handleLoginClick} />
               <NavBar />
-              <ProductSection />
               <Home />
+              <ProductSection />
               <Frequent_purchase_Carousel />
               <Footer_One />
               <FooterPart2 />
