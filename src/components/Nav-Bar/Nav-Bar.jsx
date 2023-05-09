@@ -7,7 +7,7 @@ function NavBar() {
     <nav className='navBar'>
     <div className='navBar__option'>
     <Link className='navBar__optionOne'><span>Clinic</span>  </Link>
-    <Link className='navBar__optionOne'><p>Delivery</p></Link>
+    <Link className='navBar__optionOne'><span>Same-Day Delivery</span></Link>
     <Link className='navBar__optionOne'><span>Amazon Basic</span>  </Link>
     <Link className='navBar__optionOne'><span>Customer Service</span>  </Link>
     <Link className='navBar__optionOne'><span>Groceries</span>  </Link>
