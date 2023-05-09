@@ -30,7 +30,8 @@ function Frequent_purchase_Carousel() {
       <div className='carousel__title'>Deals on frequently repurchased items</div>
       <div className='carousel__wrapper'>
         <Carousel responsive={responsive}
-           className="carousel__container">
+           className="carousel__container"
+           >
             <Carousel_Product />
             <Carousel_Product />
             <Carousel_Product />
